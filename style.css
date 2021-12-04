@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Noto+Sans:wght@400;700&family=Ubuntu&display=swap');
+
+:root {
+    --primary-color: rgb(96, 139, 204);
+    --green: #6EE7B7;
+    --off-white: #E5E7EB;
+}
+
+
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    padding: 0px;
+    margin: 5px;
+}
+.margin{
+    margin-left: 5px;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* links */
+
+
+.primary-link {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    
+
+}
+
+.link {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.secondary-link {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+
+.list-non-bullet {
+    list-style: none
+}
+
+.list-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+
+}
+
+.navigation {
+
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin: 0px;
+}
+
+.nav-ul {
+    list-style: none;
+    display: inline;
+
+
+}
+
+.nav-brand {
+    padding: 0.5rem 0.5rem;
+}
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .nav-ol {
+    text-align: right;
+    padding: 1.5rem 0.5rem;
+
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+.hero {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero .hero-img {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+
+.hero-text {
+    text-align: center;
+    color: var(--green);
+}
+
+.hero .hero-text .text {
+    color: var(--primary-color);
+}
+.section{
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.section .subsec {
+    text-align: center;
+    color: var(--primary-color)
+    
+}
+
+.section .size {
+    padding: 0.5rem 15rem;
+    font-size: 18px;
+    
+    
+}
+.section p{ 
+   
+font-family: 'Ubuntu', sans-serif;
+}
+#ow{
+    background-color: var(--off-white);
+}
+.footer{
+background-color: var(--primary-color);
+padding: 5rem;
+border-top-left-radius: 1rem;
+}
+.footer .align{
+    margin: 0px;
+    text-align: center;
+    
+}
+.footer ul a{
+    text-decoration: none;
+    color: white;
+}
