@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <title>By value VS By Reference</title>
+</head>
+
+<header>
+    <h1>By Value VS By Reference</h1>
+    
+</header>
+
+<section>
+    <p>Today am going to talk about and explain how by value and by reference works in Javascript as far as i
+        understand.
+        This is one of the fundamental concepts of Javascript. Understanding this is very important and it will also
+        help
+        you to
+        debug your code better. First we will talk about primitive value and then we move on to objects. For
+        those of you who are not familiar-- Numbers, Strings, Boolean etc. are primitive and besides that almost
+        everything in
+        javascript is an
+        object.
+        Now Lets start!
+    </p>
+
+    <p><strong>By Value :</strong></p>
+    <div class="code-container">
+        let a = 10;<br>
+        let b = a; <br>
+    </div>
+
+    <p>In the above code snippet both variables 'a' and 'b' will have value 10, which i dont think you had hard time
+        figuring out but its important
+        to understand how that happens.</p>
+
+    
+
+    <p> When 'a' is declared a spot in the memmory is made for 'a' which means 'a' now
+        has
+        address
+        location
+        where it knows, where it sits in the memmory. When 'b' is declared and 'a' assigned to it 'b' points to a new
+        location in the
+        memmory and a copied value of 'a' is assigned to 'b' . Now both 'a' and 'b' points to same value with both
+        having different
+        location in the memmory, this approach is known as By value.
+    </p>
+
+    <div class="code-container">
+        let a = 10;<br>
+        let b = a; <br>
+
+        a = 11;
+    </div>
+
+    <p>now even if we change value of 'a' , the value of 'b' doesnt change because both have different memmory
+        location. So 'b' will
+        still remain 10 and 'a' will be 11</p>
+
+    <p><strong>By Reference :</strong></p>
+
+    <div class="code-container">
+        let a = {&nbsp; name: &nbsp;'Gokul' &nbsp;};<br>
+        let b = a; <br>
+    </div>
+    <p>In the above code snippet
+        when a was set equal to an object and will get a new spot in memmory or address location in the memmory of your
+        computer
+        But when 'b' is set equal to 'a' , instead of getting a new spot in memmory it points to same addresss location
+        where 'a'
+        sits.
+    </p>
+  
+    <p>Now both 'a' and 'b' have same values beacause they both points to same exact location in the memmory. This
+        approach
+        is known as By reference. No copied value of 'a' is created in this case.
+    </p>
+    <div class="code-container">
+        let a = {&nbsp; name: &nbsp;'Gokul' &nbsp;};<br>
+        let b = a; <br>
+
+        a.name = 'Rahul';
+    </div>
+
+    <p>Now if we make changes in property of 'a' and beacause both of the variables points to exact same location ,those
+        changes
+        will reflect in
+        'b' too. A change in one variable will cause change in other variables if they are set equal to each other in
+        case of objects,
+        as objects use by reference approach.
+    </p>
+
+    <p><strong>An exception</strong></p>
+
+    <div class="code-container">
+        let a = {&nbsp; name: &nbsp;'Tanay' &nbsp;};<br>
+    </div>
+
+    <p>In this case a new address location will be created for 'a' as it was not pre-existing in memmory.
+        Earlier when we did 'b = a' "a" was already in the memmory that is why new address location was not created for
+        'b'.
+        So thats only exception where By Reference doesn't really applies.
+    </p>
+
+    <p>Ok so that was my Understanding of this concept, I am still learning and please feel free to
+        contact me if any correction
+        has to be made or something else is to be added. Thank you for reading.. Keep Coding! Keep Learning!
+    </p>
+
+</section>
+
+<body>
+
+</body>
+
+</html>
