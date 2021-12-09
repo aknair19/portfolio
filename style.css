@@ -1,18 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Fuzzy+Bubbles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Noto+Sans:wght@400;700&family=Ubuntu&display=swap');
 
 :root {
-    --primary-color: rgb(96, 139, 204);
+    --primary-color: #8C86E2;
     --green: #6EE7B7;
     --off-white: #E5E7EB;
+}
+* {
+    margin:0px;
+    padding: 0px;
+    border: 0px;
 }
 
 
 
 body {
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Baloo Bhaijaan 2', cursive;
     padding: 0px;
     margin: 5px;
+}
+.project-heading{
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+}
+.nav-brand{
+    font-size: 2rem;
 }
 .margin{
     margin-left: 5px;
@@ -44,9 +57,13 @@ hr {
 
 }
 
-.link {
+.link-button {
+    display: block;
     padding: 0.5rem 1rem;
     text-decoration: none;
+    margin:  0.5rem auto;
+    text-align: center;
+    width: 8rem;
 }
 
 .secondary-link {
@@ -59,6 +76,12 @@ hr {
 .list-non-bullet {
     list-style: none
 }
+.link{
+    
+    padding: 0.5rem;
+    margin:1rem;
+    text-decoration: none;
+}
 
 .list-inline {
     display: inline;
@@ -70,16 +93,16 @@ hr {
 
     background-color: var(--primary-color);
     border-bottom-left-radius: 1rem;
-    border-top-right-radius: 1rem;
     margin: 0px;
 }
 
 .nav-ul {
     list-style: none;
     display: inline;
-
+    font-size: 30px;
 
 }
+
 
 .nav-brand {
     padding: 0.5rem 0.5rem;
@@ -111,7 +134,8 @@ hr {
 .hero .hero-img {
     max-width: 450px;
     display: block;
-    margin: auto;
+    margin: 1rem auto;
+
 }
 
 .hero-text {
@@ -125,6 +149,7 @@ hr {
 .section{
     padding: 2rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .section .subsec {
@@ -148,14 +173,20 @@ font-family: 'Ubuntu', sans-serif;
 }
 .footer{
 background-color: var(--primary-color);
-padding: 5rem;
+padding: 2rem;
 border-top-left-radius: 1rem;
+text-align: center;
 }
+
 .footer .align{
     margin: 0px;
     text-align: center;
+    font-size: x-large;
+    padding: 1rem;
+    
     
 }
+
 .footer ul a{
     text-decoration: none;
     color: white;
